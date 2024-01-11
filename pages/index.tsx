@@ -81,7 +81,7 @@ export default function Home() {
           </svg>
         </div>) : moviePlots.map(item =>
           <div key={item.title}
-            className="relative p-10 rounded-xl binline-block justify-start rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-darkBlue items-start">
+            className="relative p-10 binline-block justify-start rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-darkBlue items-start">
             <div className="text-6xl absolute top-4 right-4 opacity-80">🍿</div>
             <div>
               <h4 className="opacity-90 text-xl">From {item.director}</h4>

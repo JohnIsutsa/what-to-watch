@@ -24,7 +24,7 @@ export default async function handler(
   const { search } = req.body;
 
   const model = await use.load();
-  const embedding = await model.embed('cats');
+  const embedding = await model.embed(search);
   const embeddingArray = embedding.arraySync()[0];
 
   const client = new pg.Client(config);
